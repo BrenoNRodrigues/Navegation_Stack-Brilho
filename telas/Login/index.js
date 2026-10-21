@@ -1,24 +1,59 @@
-function validar () {
-    if (user !== "") {
-        if (pass !== "") {
-            navigation.navigate("Home");
-        } else{
-            alert("Senha ou usuário inválidos");
-        }
-    } else{
-        alert("Usuário ou senha inválidos");
+import { LinearGradient } from 'expo-linear-gradient';
+import { Alert, Pressable, Text, TextInput, View } from 'react-native';
+import { useState } from 'react';
+import cores from '../cores';
+import styles from './styles';
+
+export default function Login({ navigation }) {
+  const [user, setUser] = useState("");
+  const [pass, setPass] = useState("");
+
+  function validar() {
+    if (user === "aluno" && pass === "123456") {
+      navigation.replace("Home");
+    } else {
+      Alert.alert("Usuário ou senha inválidos");
     }
+  }
+
+  return (
+    <LinearGradient
+      colors={[cores.verde, cores.amarelo]}
+      start={{ x: 0, y: 0 }}
+      end={{ x: 1, y: 1 }}
+      style={styles.container}
+    >
+      <View style={styles.card}>
+        <Text style={styles.eyebrow}>BRILHANTE</Text>
+        <Text style={styles.title}>Entre para começar</Text>
+        <View style={styles.espacoInput}>
+          <TextInput
+            style={styles.input}
+            placeholder="Login"
+            placeholderTextColor="#668174"
+            autoComplete="username"
+            autoCapitalize="none"
+            value={user}
+            onChangeText={setUser}
+          />
+          <TextInput
+            style={styles.input}
+            placeholder="Senha"
+            placeholderTextColor="#668174"
+            secureTextEntry
+            value={pass}
+            onChangeText={setPass}
+            onSubmitEditing={validar}
+          />
+        </View>
+        <Pressable
+          accessibilityRole="button"
+          onPress={validar}
+          style={({ pressed }) => [styles.button, pressed && styles.buttonPressed]}
+        >
+          <Text style={styles.buttonText}>Entrar</Text>
+        </Pressable>
+      </View>
+    </LinearGradient>
+  );
 }
-
-return (
-    <view style={styles.app}>
-        
-        <text style={styles.title}>Login</text>
-
-        <view style={styles.paddingBottom}>
-            <text style={styles.label}>Usuário</text>
-            <textInput style={styles.campo} placeholder="Digite seu usuário" value={user}></textInput>
-        </view>
-
-    </view>
-)

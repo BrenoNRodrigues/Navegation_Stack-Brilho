@@ -1,20 +1,30 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import Login from './telas/Login';
+import Home from './telas/home';
+import Sobre from './telas/sobre';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import Contato from './telas/contato';
+import cores from './telas/cores';
+
+const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator
+        initialRouteName="Login"
+        screenOptions={{
+          headerStyle: { backgroundColor: cores.profundo },
+          headerTintColor: cores.textoClaro,
+          headerTitleStyle: { fontWeight: '700' },
+          contentStyle: { backgroundColor: cores.aqua },
+        }}
+      >
+        <Stack.Screen name="Login" component={Login} options={{ headerShown: false }} />
+        <Stack.Screen name="Home" component={Home} options={{ title: 'Início' }} />
+        <Stack.Screen name="Sobre" component={Sobre} options={{ title: 'Sobre nós' }} />
+        <Stack.Screen name="Contato" component={Contato} options={{ title: 'Contato' }} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
