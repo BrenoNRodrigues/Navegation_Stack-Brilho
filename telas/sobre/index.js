@@ -14,26 +14,30 @@ export default function Sobre() {
       <ScrollView contentContainerStyle={styles.container}>
         <View style={styles.cabecalho}>
           <Text style={styles.logo}>Brilhante</Text>
+          <Text style={styles.subtitle}>Brilhante Sustentabilidade</Text>
           <Text style={styles.title}>Cultivando escolhas melhores</Text>
           <View style={styles.highlightLine} />
         </View>
 
         <View style={styles.card}>
-        <Text style={styles.description}>
-          Acreditamos que pequenas atitudes, feitas em conjunto, podem transformar
-          o futuro e tornar nossas comunidades mais sustentáveis.
-        </Text>
+          <Text style={styles.description}>
+            A Brilhante Sustentabilidade é uma empresa fictícia dedicada a
+            inspirar escolhas conscientes e iniciativas que cuidam do meio
+            ambiente e das comunidades.
+          </Text>
         </View>
         <View style={styles.card}>
           <Text style={styles.subtitle}>Nossa missão</Text>
           <Text style={styles.text}>
-            Loren Ipsum is simply dummy text of the printing and typesetting industry. 
+            Incentivar hábitos sustentáveis por meio de informação, colaboração
+            e ações simples que fazem diferença no dia a dia.
           </Text>
         </View>
         <View style={styles.card}>
           <Text style={styles.subtitle}>Nossa visão</Text>
           <Text style={styles.text}>
-            Um futuro com comunidades mais mentes Brilhantes.
+            Contribuir para um futuro em que comunidades e meio ambiente
+            prosperem juntos.
           </Text>
         </View>
         <View style={styles.card}>

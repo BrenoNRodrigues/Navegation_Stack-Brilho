@@ -9,6 +9,16 @@ export default function Login({ navigation }) {
   const [pass, setPass] = useState("");
 
   function validar() {
+    if (!user.trim()) {
+      Alert.alert("Informe o usuário.");
+      return;
+    }
+
+    if (!pass.trim()) {
+      Alert.alert("Informe a senha.");
+      return;
+    }
+
     if (user === "aluno" && pass === "123456") {
       navigation.replace("Home");
     } else {
