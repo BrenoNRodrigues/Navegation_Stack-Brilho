@@ -13,9 +13,9 @@ export default function Sobre() {
     >
       <ScrollView contentContainerStyle={styles.container}>
         <View style={styles.cabecalho}>
-          <Text style={styles.logo}>Brilhante</Text>
-          <Text style={styles.subtitle}>Brilhante Sustentabilidade</Text>
-          <Text style={styles.title}>Cultivando escolhas melhores</Text>
+          <Text style={styles.logo}> Brilhante </Text>
+          <Text style={styles.subtitle}> Brilhante Sustentabilidade </Text>
+          <Text style={styles.title}> Cultivando escolhas melhores </Text>
           <View style={styles.highlightLine} />
         </View>
 
@@ -27,21 +27,21 @@ export default function Sobre() {
           </Text>
         </View>
         <View style={styles.card}>
-          <Text style={styles.subtitle}>Nossa missão</Text>
+          <Text style={styles.subtitle}> Nossa missão </Text>
           <Text style={styles.text}>
             Incentivar hábitos sustentáveis por meio de informação, colaboração
             e ações simples que fazem diferença no dia a dia.
           </Text>
         </View>
         <View style={styles.card}>
-          <Text style={styles.subtitle}>Nossa visão</Text>
+          <Text style={styles.subtitle}> Nossa visão </Text>
           <Text style={styles.text}>
             Contribuir para um futuro em que comunidades e meio ambiente
             prosperem juntos.
           </Text>
         </View>
         <View style={styles.card}>
-          <Text style={styles.subtitle}>Nossos valores</Text>
+          <Text style={styles.subtitle}> Nossos valores </Text>
           <Text style={styles.text}>
             Sustentabilidade, colaboração, respeito e responsabilidade.
           </Text>

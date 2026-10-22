@@ -9,12 +9,12 @@ export default function Login({ navigation }) {
   const [pass, setPass] = useState("");
 
   function validar() {
-    if (!user.trim()) {
+    if (!user()) {
       Alert.alert("Informe o usuário.");
       return;
     }
 
-    if (!pass.trim()) {
+    if (!pass()) {
       Alert.alert("Informe a senha.");
       return;
     }
