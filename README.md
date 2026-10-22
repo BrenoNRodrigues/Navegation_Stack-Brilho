@@ -62,4 +62,4 @@ Foi utilizado a assistencia de inteligencia artificial das seguintes formas:
 
 1. Mudança de Cores no Aplicativo
 2. Verificação dos requisitos do projeto
-3. Brilho em baixo do texto da pagina homa
+3. Brilho em baixo do texto da pagina home
