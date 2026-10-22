@@ -6,7 +6,7 @@ import styles from './style';
 export default function Contato() {
   return (
     <LinearGradient
-      colors={[cores.verde, cores.amarelo]}
+      colors={[cores.azul, cores.azulClaro]}
       start={{ x: 0, y: 0 }}
       end={{ x: 1, y: 1 }}
       style={styles.background}

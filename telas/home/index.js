@@ -8,14 +8,14 @@ export default function Home({ navigation }) {
 
   return (
     <LinearGradient
-      colors={[cores.verde, cores.amarelo]}
+      colors={[cores.azul, cores.azulClaro]}
       start={{ x: 0, y: 0 }}
       end={{ x: 1, y: 1 }}
       style={styles.background}
     >
       <ScrollView contentContainerStyle={styles.container}>
         <LinearGradient
-          colors={[cores.profundo, cores.amarelo]}
+          colors={[cores.azulEscuro, cores.azulMedio]}
           start={{ x: 1, y: 1 }}
           end={{ x: 0, y: 0 }}
           style={styles.welcome}

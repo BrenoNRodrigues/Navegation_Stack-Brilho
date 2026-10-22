@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
     paddingVertical: 36,
   },
   title: {
-    color: cores.profundo,
+    color: cores.azulEscuro,
     fontSize: 19,
     fontWeight: '600',
     textAlign: 'center',
@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
   description: {
     width: '100%',
     maxWidth: 560,
-    color: cores.profundo,
+    color: cores.azulEscuro,
     fontSize: 16,
     lineHeight: 25,
     textAlign: 'center',
@@ -36,21 +36,21 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     borderWidth: 1,
     backgroundColor: 'rgba(255, 255, 255, 0.94)',
-    borderColor: 'rgba(243, 248, 232, 0.18)',
-    shadowColor: cores.profundo,
+    borderColor: 'rgba(243, 248, 255, 0.18)',
+    shadowColor: cores.azulEscuro,
     shadowOffset: { width: 0, height: 6 },
     shadowOpacity: 0.15,
     shadowRadius: 10,
     elevation: 4,
   },
   subtitle: {
-    color: cores.amarelo,
+    color: cores.azulEscuro,
     fontSize: 18,
     fontWeight: '700',
     textAlign: 'center',
   },
   text: {
-    color: cores.profundo,
+    color: cores.azulEscuro,
     fontSize: 15,
     lineHeight: 23,
     textAlign: 'center',
@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
   },
   versao: {
     fontSize: 12,
-    color: '#164B3C',
+    color: cores.azulEscuro,
     marginTop: 24,
   },
   cabecalho: {

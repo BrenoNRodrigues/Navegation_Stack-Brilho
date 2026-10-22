@@ -18,7 +18,7 @@ export default function Login({ navigation }) {
 
   return (
     <LinearGradient
-      colors={[cores.verde, cores.amarelo]}
+      colors={[cores.azul, cores.azulClaro]}
       start={{ x: 0, y: 0 }}
       end={{ x: 1, y: 1 }}
       style={styles.container}
@@ -30,7 +30,7 @@ export default function Login({ navigation }) {
           <TextInput
             style={styles.input}
             placeholder="Login"
-            placeholderTextColor="#668174"
+            placeholderTextColor={cores.azulEscuro}
             autoComplete="username"
             autoCapitalize="none"
             value={user}
@@ -39,7 +39,7 @@ export default function Login({ navigation }) {
           <TextInput
             style={styles.input}
             placeholder="Senha"
-            placeholderTextColor="#668174"
+            placeholderTextColor={cores.azulEscuro}
             secureTextEntry
             value={pass}
             onChangeText={setPass}

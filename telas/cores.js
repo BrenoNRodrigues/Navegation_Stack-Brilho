@@ -1,10 +1,9 @@
 const cores = {
-  amarelo: '#D4EC5B',
-  aprofundado: '#cae24e',
-  verde: '#49C377',
-  aqua: '#2AA783',
-  profundo: '#019772',
-  textoClaro: '#F3F8E8',
+  azulClaro: '#D9ECFB',
+  azul: '#4D9DE0',
+  azulMedio: '#2F75B7',
+  azulEscuro: '#174A7E',
+  textoClaro: '#F3F8FF',
   azulBrilho: '#83D8FF',
 };
 
